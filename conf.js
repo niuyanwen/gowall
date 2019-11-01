@@ -28,6 +28,20 @@ jsproxy_config({
         'node-aliyun-sg.etherdream.com:8443': 1,
       },
     },
+    'demo-sg': {
+      label: '演示服务-牛牛牛（有频率限制）',
+      lines: {
+        // 收费版（高权重）
+        'node-cfworker.etherdream.com': 4,
+
+        // 免费版（低权重，分摊一些成本）
+        // 每个账号每天 10 万次免费请求，但有频率限制
+        'b.007.workers.dev': 1,
+        'b.hehe.workers.dev': 1,
+        'b.lulu.workers.dev': 1,
+        'b.jsproxy.workers.dev': 1,
+      },
+    },
     'mysite': {
       label: '当前站点',
       lines: {
